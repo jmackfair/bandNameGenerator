@@ -2,7 +2,10 @@
 
 <footer>
   <!-- Step 4 - Add a dynamic year to the footer using JS. -->
-  <p>Copyright © 200X</p>
+  <% let currentYear = new Date().getFullYear().toString() %>
+  <!--Get the last two digits-->
+  <% currentYear = currentYear.substring(currentYear.length - 2, currentYear.length)%>
+  <p>Copyright © 20<%= currentYear %></p>
 </footer>
 </body>
 
